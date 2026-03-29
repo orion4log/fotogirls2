@@ -28,8 +28,19 @@ src="dayneko/autodaynsm.html">
 
 </div><div class="col-4">
 
-<h5 class="mb-4 text-center">Итак, Вы попали на этот сайт. Определить пароль Вам будет немного сложнее.
-Этот пароль Вы не знаете, но если определить его не получается, можете попробовать его подобрать.</h5>
+<span class="mb-4 text-center">    <!-- Итак, Вы попали на этот сайт. Определить пароль Вам будет немного сложнее. -->
+Этот пароль Вы не знаете, но если определить его не получается, можете попробовать его подобрать
+Послушать музыку без плеера Вы можете
+<button class="zapplay" onclick="playpauseTrack()">Запуск/Стоп</button>
+Для доступа к плееру нужен пароль
+</span>
+
+<div class="slider_container">
+  <div class="current-time">00:00</div>
+  <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+  <div class="total-duration">00:00</div>
+</div>
+
 <form name="Form1">
 <div class="form-group" style="text-align: center; font-size: 1.9rem;">Введите пароль</div>
 <div class="form-group">
@@ -93,6 +104,7 @@ src="glukoza/autogluksm.html">
 <script src="styles/app.js"></script>
 <script src="styles/validprov.js"></script> 
 <script src="styles/main.js"></script>
+<script src="styles/audioplay.js"></script>
   
 </body>
 </html>
